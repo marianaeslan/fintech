@@ -11,8 +11,8 @@ $dark: #3B3142;
 
 $custom-theme-colors: (
     "support-color": #A2B0FF,
-    "alt-light": #FFFAF8,
-    "light-dark": #6D6573
+    "altlight": #FDE6DD,
+    "lightdark": #6D6573
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
