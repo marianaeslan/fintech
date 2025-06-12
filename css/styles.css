@@ -22,3 +22,11 @@ h1, h2, h3, h4, h5, h6 {
 .big-button:hover {
     border: 3px solid black !important;
 }
+
+nav .nav-links .n-link {
+    transition: all 0.5s ease in !important;
+}
+
+nav .nav-links .n-link:hover {
+    border-bottom: 2px solid #FFA886 !important;
+}
