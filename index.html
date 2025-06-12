@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
     <link href="/css/main.min.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Fintech</title>
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid"> 
-            <div class="row w-100 align-items-center mx-auto"> 
-                <div class="col-6">
-                    <a class="navbar-brand py-0" href="#"> 
-                        <img src="images/logo.svg" width="80" height="30" alt="Logo da Empresa">
-                    </a>
+    <nav class="navbar navbar-light bg-light px-4">
+        <div class="nav-wrap d-flex justify-content-between align-items-center w-100">
+            <div class="navbar-brand">
+                <img src="./images/logo.svg" alt="" width="120" height="60">
+            </div>
+            <div class="nav-links d-flex justify-content-end align-items-center ms-auto fs-6"> <div>
+                    <a class="text-lightdark text-decoration-none fs-5 me-3" href="#">Home</a> </div>
+                <div>
+                    <a class="text-lightdark text-decoration-none fs-5 me-3" href="#">Objetivos</a>
                 </div>
-                <div class="col-6 d-flex justify-content-end"> 
-                    <button 
-                    type="button" 
-                    class="btn btn-altlight p-2 rounded-circle d-flex align-items-center justify-content-center" 
-                    width="30" 
-                    height="30">
-                        <img src="./images/notification-bell.svg" width="15" height="15" alt="Notificações" class="img-fluid">
-                    </button>
+                <div>
+                    <a class="text-lightdark text-decoration-none fs-5 me-3" href="#">Visão Geral</a>
                 </div>
+                <div>
+                    <a class="text-decoration-none text-lightdark fs-5 me-3" href="#">Transações</a>
+                </div>
+                <div>
+                    <a class="text-decoration-none text-lightdark fs-5" href="#">Conta</a> </div>   
             </div>
         </div>
     </nav>
@@ -33,7 +38,7 @@
      <main class="bg-light">
         <div class="container py-4"> 
             <h1 class="h1 mb-4">Home</h1>
-            <div class="mb-4 rounded-4 bg-primary">
+            <div class="mb-4 rounded-4 bg-primary big-button">
                 <a href="#" class="text-dark text-decoration-none">
                     <div class="p-4">
                         <h3 class="h3 mb-1">Caixinha</h3>
@@ -47,7 +52,7 @@
             </div>
         <div class="row">
             <div class="col-6 pe-2"> 
-                <div class="rounded-4 text-left bg-secondary">
+                <div class="rounded-4 text-left bg-secondary big-button">
                     <a href="#" class="text-dark text-decoration-none">
                         <div class="p-4">
                             <div class="mx-auto"> 
@@ -60,7 +65,7 @@
             </div>
 
             <div class="col-6 ps-2"> 
-                <div class="rounded-4 text-left bg-support-color">
+                <div class="rounded-4 text-left bg-support-color big-button">
                     <a href="#" class="text-dark text-decoration-none">
                         <div class="p-4">
                             <div class="mx-auto">
@@ -82,64 +87,65 @@
         </div>
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between mb-3">
-                <div class="col-2">
-                    <div class="img-wrap p-2 rounded-4 border border-secondary d-flex align-items-center justify-content-center">
+                <div class="col-1">
+                    <div class="img-wrap rounded-circle border border-secondary d-flex align-items-center justify-content-center icon-circle-size">
                         <img src="./images/money-icon.svg" alt="icone com uma ilustração de dinheiro" width="15" height="15" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-6">
                     <div class="recent-title d-flex flex-column align-items-start justify-content-between">
-                        <p class="my-0 fs-6">Salário</p>
+                        <p class="my-0 fs-5">Salário</p>
                         <p class="my-0 fs-6 text-lightdark">05/05/2025</p>
                     </div>
                 </div>
                 <div class="col-5 px-0">
                     <div class="recent-info d-flex align-items-center justify-content-end">
                         <img src="./images/add-icon.svg" alt="icone positivo" class="px-2">
-                        <p class="fs-6 text-lightdark my-0">R$ 6.300,00</p>
+                        <p class="fs-5 text-lightdark my-0">R$ 6.300,00</p>
                     </div>
                 </div>
             </div>  
             <div class="row d-flex align-items-center justify-content-between mb-3">
-                <div class="col-2">
-                    <div class="img-wrap p-2 rounded-4 border border-secondary d-flex align-items-center justify-content-center">
-                        <img src="./images/cc-icon.svg" alt="icone com uma ilustração de cartao de credito" width="15" height="15" class="img-fluid">
+                <div class="col-1">
+                    <div class="img-wrap rounded-circle border border-secondary d-flex align-items-center justify-content-center icon-circle-size">
+                        <img src="./images/cc-icon.svg" alt="icone com uma ilustração de dinheiro" width="15" height="15" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-6">
                     <div class="recent-title d-flex flex-column align-items-start justify-content-between">
-                        <p class="my-0 fs-6">Riachuelo</p>
+                        <p class="my-0 fs-5">Riachuelo</p>
                         <p class="my-0 fs-6 text-lightdark">20/04/2025</p>
                     </div>
                 </div>
                 <div class="col-5 px-0">
                     <div class="recent-info d-flex align-items-center justify-content-end">
                         <img src="./images/neg-icon.svg" alt="icone negativo" class="px-2">
-                        <p class="fs-6 text-lightdark my-0">R$ 370,00</p>
+                        <p class="fs-5 text-lightdark my-0">R$ 370,00</p>
                     </div>
                 </div>
             </div>  
             <div class="row d-flex align-items-center justify-content-between mb-3">
-                <div class="col-2">
-                    <div class="img-wrap p-2 rounded-4 border border-secondary d-flex align-items-center justify-content-center">
+                <div class="col-1">
+                    <div class="img-wrap rounded-circle border border-secondary d-flex align-items-center justify-content-center icon-circle-size">
                         <img src="./images/cc-icon.svg" alt="icone com uma ilustração de dinheiro" width="15" height="15" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-6">
                     <div class="recent-title d-flex flex-column align-items-start justify-content-between">
-                        <p class="my-0 fs-6">Carrefour</p>
+                        <p class="my-0 fs-5">Carrefour</p>
                         <p class="my-0 fs-6 text-lightdark">15/04/2025</p>
                     </div>
                 </div>
                 <div class="col-5 px-0">
                     <div class="recent-info d-flex align-items-center justify-content-end">
                         <img src="./images/add-icon.svg" alt="icone positivo" class="px-2">
-                        <p class="fs-6 text-lightdark my-0">R$ 600,00</p>
+                        <p class="fs-5 text-lightdark my-0">R$ 600,00</p>
                     </div>
                 </div>
             </div>  
         </div> 
      </main>
+    
 
 
 </body>
